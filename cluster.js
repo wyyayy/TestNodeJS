@@ -11,7 +11,7 @@ if (cluster.isMaster)
     cluster.fork();
   }
    
-   /// Dummy
+   /// Dummy (B1)
   cluster.on('exit', function(worker, code, signal) {
     console.log('worker ' + worker.process.pid + ' died');
   });
@@ -30,3 +30,4 @@ else
 }
 
 /// B2_1
+/// B1_1
